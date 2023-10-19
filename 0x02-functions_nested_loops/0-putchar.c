@@ -1,20 +1,29 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
- * main - Entry point
- * Description: prints '_putchar\n'
- * Return: Always 0 (success)
+ * main - Entry point of the program
+ * Description: This program prints the string "_putchar"
+ * character by character.
+ * Return: Always 0 (indicating success)
  */
+
 int main(void)
 {
-char str[] = "_putchar";
-int i = 0;
 
-while (str[i] != '\0')
+	char str[] = "_putchar";
+	int i = 0;
+
+
+	while (str[i] != '\0')
 	{
-	char c = str[i];
+		char c = str[i];
 
-	_putchar(c);
-	i++;
+		printf("%c", c);
+		i++;
 	}
-return (0);
+
+	printf("\n");
+
+	return (0);
 }
